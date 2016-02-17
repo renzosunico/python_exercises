@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-unit">
+  <h1>Welcome to Training Center!</h1>
+
+<br/><br/>
+
+<form class="form-horizontal" method="post" action="{{ url_for('login') }}">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="control-group">
+      <label class="control-label" for="username">Username: </label>
+      <div class="controls">
+	<input name="username" type="text" class="input-xlarge" id="username">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password">Password: </label>
+      <div class="controls">
+        <input name="password" type="password" class="input-xlarge" id="password">
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+	<button class='btn btn-large btn-primary float-left'>Log in</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+{% endblock content %}

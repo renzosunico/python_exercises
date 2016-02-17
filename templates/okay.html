@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-unit">
+  <h1>Welcome to Python</h1>
+  <p>This is the worlds leading website in learning python and other programming language.</p>
+  <br><br><br>
+  <p>
+	So you login to my page your username is {{ session.username }} and your password is {{ session.password }}.
+  </p>
+</div>
+{% endblock content %}
